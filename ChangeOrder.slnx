@@ -1,15 +1,15 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="ChangeOrder.Business/ChangeOrder.Business.csproj" Id="04acd963-9e8f-4d53-aef0-7ecd00861b76" />
-    <Project Path="ChangeOrder.Data/ChangeOrder.Data.csproj" Id="aa17c007-037e-48a9-aecc-4d9c4b5a21bd" />
-    <Project Path="ChangeOrder.Domain/ChangeOrder.Domain.csproj" Id="dca46ebe-25dc-47f2-aa69-f5782b95211e" />
-    <Project Path="ChangeOrder.Host/ChangeOrder.Host.csproj" Id="72ac3beb-87b8-4767-bf06-384266bf9b15" />
-    <Project Path="ChangeOrder.Presentation/ChangeOrder.Presentation.csproj" Id="22ff50cc-6ede-4f7c-a902-ab1730972a72" />
+    <Project Path="src/ChangeOrder.Business/ChangeOrder.Business.csproj" />
+    <Project Path="src/ChangeOrder.Data/ChangeOrder.Data.csproj" />
+    <Project Path="src/ChangeOrder.Domain/ChangeOrder.Domain.csproj" />
+    <Project Path="src/ChangeOrder.Host/ChangeOrder.Host.csproj" />
+    <Project Path="src/ChangeOrder.Presentation/ChangeOrder.Presentation.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="ChangeOrder.Business.Tests/ChangeOrder.Business.Tests.csproj" Id="bba5f356-16db-4aad-a00a-6842a2135d87" />
-    <Project Path="ChangeOrder.Data.Tests/ChangeOrder.Data.Tests.csproj" Id="0bab1616-3b51-4024-862b-a7b14840c581" />
-    <Project Path="ChangeOrder.Domain.Tests/ChangeOrder.Domain.Tests.csproj" Id="e85b2c41-e129-4c99-84c6-600e90e91434" />
-    <Project Path="ChangeOrder.Presentation.Tests/ChangeOrder.Presentation.Tests.csproj" Id="6de625aa-8d77-42c6-8ed9-77dd6b4c42ff" />
+    <Project Path="tets/ChangeOrder.Business.Tests/ChangeOrder.Business.Tests.csproj" />
+    <Project Path="tets/ChangeOrder.Data.Tests/ChangeOrder.Data.Tests.csproj" />
+    <Project Path="tets/ChangeOrder.Domain.Tests/ChangeOrder.Domain.Tests.csproj" />
+    <Project Path="tets/ChangeOrder.Presentation.Tests/ChangeOrder.Presentation.Tests.csproj" />
   </Folder>
 </Solution>
