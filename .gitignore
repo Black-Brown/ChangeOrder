@@ -7,7 +7,7 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
-# Build results
+## .NET
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -28,27 +28,65 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
-
-# NuGet Packages
+# NuGet
 *.nupkg
-# NuGet Symbol Packages
 *.snupkg
+**/packages/
+!**/packages/build/
+.nuget/
 
-# Others
-~$*
-*~
-CodeCoverage/
-
-# MSBuild Binary and Structured Log
+# MSBuild
 *.binlog
 
-# MSTest test Results
+# Test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
-
-# NUnit
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+CodeCoverage/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Publicación
+publish/
+**/publish/
+
+# Logs
+logs/
+*.log
+
+# Archivos sensibles - NUNCA subir a GitHub
+appsettings.Production.json
+*.pfx
+*.p12
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Entity Framework
+*.mdf
+*.ldf
+
+# Rider / JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
