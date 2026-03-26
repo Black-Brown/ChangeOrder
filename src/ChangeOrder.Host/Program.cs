@@ -1,6 +1,5 @@
-﻿namespace ChangeOrder.Host
-{
-    public class Program
-    {
-    }
-}
+﻿var builder = WebApplication.CreateBuilder(args);
+
+WebApplication app = builder.Build();
+
+app.Run();
