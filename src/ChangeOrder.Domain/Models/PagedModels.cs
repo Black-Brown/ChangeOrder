@@ -4,30 +4,29 @@ using System.Text;
 
 namespace ChangeOrder.Domain.Models;
 
-/// <summary>Parámetros de paginación para consultas de listas </summary>
+/// <summary>Parámetros de paginación para consultas de listas.</summary>
 public sealed record PagedRequest(int Page = 1, int PageSize = 10)
 {
-    /// <summary> Número de página (mínimo 1) </summary>
-    public int Page { get; set; } = Page < 1 ? 1 : Page;
+    /// <summary>Número de página (mínimo 1).</summary>
+    public int Page { get; init; } = Page < 1 ? 1 : Page;
 
     /// <summary>Tamaño de página (entre 1 y 50).</summary>
-    public int PageSize { get; set; } = PageSize > 50 ? 50 : PageSize < 1 ? 10 : PageSize;
+    public int PageSize { get; init; } = PageSize > 50 ? 50 : PageSize < 1 ? 10 : PageSize;
 }
 
 /// <summary>Respuesta paginada genérica.</summary>
-public sealed record PageResponse<T>(
+public sealed record PagedResponse<T>(
     IReadOnlyList<T> Items,
-    int TotalAcount,
+    int TotalCount,
     int Page,
-    int PageSize
-    )
+    int PageSize)
 {
     /// <summary>Total de páginas.</summary>
-    public int TotalPages => (int)Math.Ceiling(TotalAcount / (double)PageSize);
+    public int TotalPages => (int)Math.Ceiling(TotalCount / (double)PageSize);
 
-    /// <summary> indica si hay una pagina siguiente </summary>
+    /// <summary>Indica si existe una página siguiente.</summary>
     public bool HasNextPage => Page < TotalPages;
 
-    /// <summary> indica si hay una pagina anterior </summary>
+    /// <summary>Indica si existe una página anterior.</summary>
     public bool HasPreviousPage => Page > 1;
 }
